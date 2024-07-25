@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+$white: hsl(0, 0%, 100%);
+$lightgray:hsl(217, 12%, 63%);
+$darkblue:hsl(213, 19%, 18%);
+$verydarkblue:hsl(216, 12%, 8%);
+$orange:hsl(25, 97%, 53%);
+
+
+body{background-color: $verydarkblue;
+}
+
+h1{color: $white;
+     font-family: "Overpass";
+}
+
+p{font-family: "Overpass";
+     color: $lightgray;
+     line-height: 1.5;
+}
+
+.circle{border-radius: 50%;
+          background-color: $verydarkblue;
+          height: 40px;
+          width: 40px;
+          margin-bottom: 25px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+     }
+#container{
+     position: absolute;
+     top:50%;
+     left:50%;
+     transform: translate(-50%, -50%);
+     background-color: $darkblue;
+     height: 350px;
+     width:350px;
+     padding: 20px 20px 0px 20px;
+     border-radius: 30px;
+
+     .numbers{
+          display: flex;
+          justify-content: space-between;
+        
+     }
+
+     .num{
+          border-radius:50% ;
+          background-color: $verydarkblue;
+          height: 40px;
+          width: 40px;
+          color: $lightgray;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &:hover{
+               background-color: $orange;
+               cursor: pointer;
+          }
+          
+
+     }
+
+     button{
+          width: 100%;
+          background-color: $orange;
+          border-radius: 50px;
+          height: 40px;
+          border: none;
+          color:$verydarkblue ;
+          font-weight: 700;
+         margin-bottom: 0px;
+          margin-top: 30px;
+          &:hover{
+               background-color: $white;
+               cursor: pointer;
+          }
+     }
+
+}
+//A class that can be reused to display none
+
+
+@import './thankpage'
